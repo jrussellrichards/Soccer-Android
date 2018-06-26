@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.inducesmile.androidmusicplayer">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".model.GlobalData"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".ui.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.PrincipalActivity"
+            android:label="@string/title_activity_music"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity android:name=".ui.LoginActivity" />
+        <activity android:name=".ui.MisCampeonatosActivity"
+            android:parentActivityName=".ui.PrincipalActividad"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.RegisterActivity" />
+        <activity android:name=".ui.MisEquiposActivity"
+            android:label="@string/title_activity_mis_equipos"
+            android:parentActivityName=".ui.PrincipalActividad"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.CrearEquipoActivity"
+            android:parentActivityName=".ui.MisEquiposActivity" />
+        <activity android:name=".ui.BuscarEquipoActivity"
+            android:parentActivityName=".ui.CrearEquipoActivity" />
+        <activity android:name=".ui.EquipoActivity"
+            android:parentActivityName=".ui.BuscarEquipoActivity" />
+        <activity android:name=".ui.CrearPartidoActivity" />
+        <activity android:name=".ui.CrearCampeonatoActivity" />
+    </application>
+
+</manifest>

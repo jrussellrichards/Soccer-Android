@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mis_equipos"
+            android:icon="@drawable/ic_menu_camera_prueba"
+            android:title="Mis Equipos" />
+        <item
+            android:id="@+id/nav_administrar_campeonatos"
+            android:icon="@drawable/ic_menu_gallery_prueba"
+            android:title="Adm. Campeonato" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow_prueba"
+            android:title="Slideshow"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage_prueba"
+            android:title="Tools"
+            android:visible="false" />
+    </group>
+
+    <item
+        android:title="Communicate"
+        android:visible="false">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share_prueba"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send_prueba"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>
